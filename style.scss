@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // height: 100vh;
+        min-width: 800px;
+        h4{
+            margin: 20px auto;
+        }
+        .score-container{
+            margin: 15px auto;
+            min-width: 800px;
+            // border: 2px solid blue;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .player-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            // margin: 15px auto;
+            // border: 2px solid red;
+            min-width: 800px;
+            .player1-container, .player2-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 300px;
+                height: 300px;
+                margin: auto 10px;
+                border-radius: 50%;
+                border: 2px solid red;
+                // background-color: rgb(68, 67, 67);
+                background-color: rgb(240, 92, 92);
+                color: #fff;
+                .fas{
+                    font-size: 150px;
+                }
+            }
+            .player1-container{
+                .fa-hand-scissors{
+                transform: rotate(180deg);
+                }
+            }
+        }
+        .choose-container{
+            // border: 2px solid blue;
+            margin-top: 20px;
+            min-width: 800px;
+            display: flex;
+            // flex-direction: column;
+            justify-content: space-around;
+            button{
+                background-color: transparent;
+                border-radius: 10px;
+                border: 2px solid #000;
+                width: 100px;
+                height: 100px;
+                font-size: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                span{
+                    font-size: 15px;
+                }
+            }
+            button:active{
+                transform: scale(0.98);
+            }
+        }
+    }
+}

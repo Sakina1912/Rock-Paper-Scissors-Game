@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <h4>Try your luck!</h4>
+    <div class="score-container" id="score-container">
+        <h2 class="player1-score" id="player1-score">Player-1 Score:0</h2>
+        <h2 class="player2-score" id="player2-score">Player-2 Score:0</h2>
+    </div>
+    <!-- <div class="player-container" id="player-container"> -->
+        <ul class="player-container" id="player-container">
+            <li class="player1-container" id="player1-container">
+                <!-- <i class="fas fa-hand-paper"></i> -->
+            </li>
+            <li class="player2-container" id="player2-container">
+                <!-- <i class="fas fa-hand-scissors"></i> -->
+            </li>
+        </ul>
+        <!-- <div class="player1-container" id="player1-container"><i class="fas fa-hand-paper"></i></div>
+        <div class="player2-container" id="player2-container"><i class="fas fa-hand-scissors"></i></div> -->
+    <!-- </div> -->
+    <h3>Choose One!</h3>
+    <div class="choose-container" id="choose-container">
+        <!-- <h4>Choose One!</h4> -->
+        <button id="rockBtn" class="button" value="rock"><i class="fas fa-hand-rock"></i> <span value="rock">Rock</span> </button>
+        <button id="paperBtn" class="button" value="paper"><i class="fas fa-hand-paper"></i> <span value="paper">Paper</span> </button>
+        <button id="scissorsBtn" class="button" value="scissors"><i class="fas fa-hand-scissors"></i> <span value="scissors">Scissors</span> </button>
+        <!-- <button id="random">Random</button> -->
+    </div> 
+    <script src="/script.js"></script>
+</body>
+</html>
